@@ -1,0 +1,74 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 4px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+.btn-create, .btn-edit, .btn-delete{
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.todo-item-list{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin: 12px;
+}
+.todo-item.complete{
+    background-color: grey;
+}
+.todo-item.complete .text{
+    text-decoration: line-through;
+}
+.todo-item .text{
+    flex: 1;
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    line-height: 24px;
+    font-size: 16px;
+}
+.item-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: auto;
+}
+.btn-edit, .btn-delete{
+    width: scale(0.5);
+    text-decoration: none;
+    color: whitesmoke
+}
