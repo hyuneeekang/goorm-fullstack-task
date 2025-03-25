@@ -93,6 +93,16 @@ function createTodoElement(item){
         newItem_text.disabled = true;
         saveToLocalStorage(); //로컬 스토리지에 저장
     })
+    // 텍스트 입력 > 엔터 키 누르면 텍스트박스 disabled
+    newItem_text.addEventListener('keyup',(e) => {
+        if (e.key === 'Enter'){
+            newItem_text.disabled = true;
+            saveToLocalStorage();
+        }
+        
+    })
+
+
     // Edit 버튼 
     newItem_btn_edit.addEventListener('click',() =>{
         newItem_text.disabled = false;
